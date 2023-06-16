@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: print a quote using write functio
- * 	write(int fd,const void *buf,size_t count)
+ * write(int fd,const void *buf,size_t count)
  * Return: 1 (not success)
 */
 int main(void)
