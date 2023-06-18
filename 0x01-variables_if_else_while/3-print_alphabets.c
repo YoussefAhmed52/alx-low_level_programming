@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  * Description: print alphabet in lowercase then in uppercase
@@ -8,19 +7,21 @@
 int main(void)
 {
 	char ch = 'a';
-	char CH = 'A';
+	char CH = 'Z';
 
-	/*prints a - z*/
+	/*print a - z*/
 	while (ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
 	}
+
 	/*print A - Z*/
 	while (CH <= 'Z')
 	{
 		putchar(CH);
 		CH++;
 	}
+	putchar("\n");
 	return (0);
 }
