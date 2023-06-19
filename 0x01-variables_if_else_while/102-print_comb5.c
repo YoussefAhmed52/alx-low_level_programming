@@ -14,19 +14,19 @@ int main(void)
 
 		while (w <= 99)
 		{
-			if (q != w)
+			if (w != q)
 			{
-			putchar((q / 10) + 48);
-			putchar((q % 10) + 48);
-			putchar(' ');
-			putchar((w / 10) + 48);
-			putchar((w % 10) + 48);
-			}
-
-			if (q != 98 || w != 99)
-			{
-				putchar(',');
+				putchar((q / 10) + 48);
+				putchar((q % 10) + 48);
 				putchar(' ');
+				putchar((w / 10) + 48);
+				putchar((w % 10) + 48);
+
+				if (q != 98 || w != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 			w++;
 		}
