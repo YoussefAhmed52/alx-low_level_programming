@@ -14,7 +14,7 @@ int main(void)
 
 		while (w <= 99)
 		{
-			if (q != 0 || w != 0)
+			if (q != w)
 			{
 			putchar((q / 10) + '0');
 			putchar((q % 10) + '0');
@@ -23,7 +23,7 @@ int main(void)
 			putchar((w % 10) + '0');
 			}
 
-			if (q != 99 || w != 99)
+			if (q != 98 || w != 99)
 			{
 				putchar(',');
 				putchar(' ');
