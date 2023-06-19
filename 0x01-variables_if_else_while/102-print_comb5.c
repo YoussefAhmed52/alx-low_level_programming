@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	int q = 0, w = 0;
+	int q = 0, w;
 
 	while (q <= 99)
 	{
@@ -16,11 +16,11 @@ int main(void)
 		{
 			if (q != w)
 			{
-			putchar((q / 10) + '0');
-			putchar((q % 10) + '0');
+			putchar((q / 10) + 48);
+			putchar((q % 10) + 48);
 			putchar(' ');
-			putchar((w / 10) + '0');
-			putchar((w % 10) + '0');
+			putchar((w / 10) + 48);
+			putchar((w % 10) + 48);
 			}
 
 			if (q != 98 || w != 99)
