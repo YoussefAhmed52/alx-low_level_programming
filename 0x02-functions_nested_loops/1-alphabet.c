@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - Entry point
- * print_alphaber - utilizes on the putchar function
- * to print the alphabet a - z
+ * print_alphabet - utilizes on the putchar function
+ *		to print the alphabet a - z
 */
+
 void print_alphabet(void)
 {
 	int ch;
