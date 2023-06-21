@@ -3,8 +3,9 @@
 
 /**
  * print_to_98 - prints all natural numbers till 98
+ * separated by a comma,
+ * followed by a space Numbers should be printed in order
  * @n: numper input
- * Return: n is the natural number
 */
 
 void print_to_98(int n)
@@ -14,7 +15,7 @@ void print_to_98(int n)
 	if (n > 98)
 		for (count = n; count > 98; count--)
 			printf("%d, ", count);
-	else 
+	else
 		for (count = n; count < 98; count++)
 			printf("%d, ", count);
 		printf("98\n");
