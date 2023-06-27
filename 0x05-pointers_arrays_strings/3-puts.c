@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _putch - prints a string, followed by a newline to stdout
+ * _putchar - prints a string, followed by a newline to stdout
  * @str; string parameter to print
  * Return: nothing
 */
