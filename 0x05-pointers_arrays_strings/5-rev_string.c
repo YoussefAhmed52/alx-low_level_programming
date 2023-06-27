@@ -6,11 +6,12 @@
 */
 void rev_string(char *s)
 {
-	int l,i;
+	int l, i;
 	char temp;
 
 	/* find string length without null char */
-	for (l = 0; s[l] != '\0'; ++l);
+	for (l = 0; s[l] != '\0'; ++l)
+		;
 
 	/*swap the string by looping to half string*/
 	for (i = 0; i < l / 2; i++)
