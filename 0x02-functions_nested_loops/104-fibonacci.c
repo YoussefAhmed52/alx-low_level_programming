@@ -44,10 +44,10 @@ int main(void)
 			printf("%lu", f1o);
 		initia10s = numLength(mx) - 1 - numLength(f1);
 
-		while (f1o > 0 && intia10s > 0)
+		while (f1o > 0 && initia10s > 0)
 		{
 			printf("%d", 0);
-			intia10s--;
+			initia10s--;
 		}
 
 		printf("%lu", f1);
