@@ -18,7 +18,7 @@ void _puts(char *str)
 }
 
 /**
- * _atoi - convert astring to an integer.
+ * _atoi - convert a string to an integer.
  * @s: char type string
  * Return: integer converted
  */
@@ -46,16 +46,16 @@ int _atoi(const char *s)
 }
 
 /**
- * print_int - print an integer.
+ * print_int - prints an integer.
  * @n: int
  * Return: 0
  */
 
 void print_int(unsigned long int n)
 {
-	unsigned long int divisor = 1, i, resp;
+	unsigned  long int divisor = 1, i, resp;
 
-	for (i = 0; n / divisor > 9; i++, divisor /= 10)
+	for (i = 0; n / divisor > 9; i++, divisor *= 10)
 		;
 
 	for (; divisor >= 1; n %= divisor, divisor /= 10)
