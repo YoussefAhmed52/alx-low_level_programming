@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - print a string, followed by a new line.
+ * _puts - prints a string, followed by a new line.
  * @str: pointer to the string to print
  * Return: void
 */
@@ -53,6 +53,7 @@ int _atoi(const char *s)
 
 void print_int(unsigned long int n)
 {
+
 	unsigned long int divisor = 1, i, resp;
 
 	for (i = 0; n / divisor > 9; i++, divisor *= 10)
@@ -63,6 +64,7 @@ void print_int(unsigned long int n)
 		resp = n / divisor;
 		_putchar('0' + resp);
 	}
+
 }
 
 /**
