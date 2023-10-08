@@ -18,7 +18,7 @@ void print_number(int n)
 	}
 
 	/*print the first few digits*/
-	if ((num / 10 > 0)
+	if ((num / 10) > 0)
 			print_number(num / 10);
 
 	/*print the last ddigit*/
