@@ -2,9 +2,9 @@
 #include <stdio.h>
 /**
  * print_dog - prints nil if NULL
- * @d: dog
+ * @d: dog to print
  *
- * Return: void
+ * Return: void.
  */
 
 void print_dog(struct dog *d)
