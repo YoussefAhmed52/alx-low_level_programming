@@ -12,6 +12,7 @@
  *
  * @f: associated function
  */
+
 typedef struct token
 {
 	char *token;

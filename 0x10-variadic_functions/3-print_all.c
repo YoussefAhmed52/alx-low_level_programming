@@ -86,7 +86,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == tokens[j].token[0])
 			{
-				tokens[j].f(separatorm, ap);
+				tokens[j].f(separator, ap);
 				separator = ", ";
 			}
 			j++;
