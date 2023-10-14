@@ -1,5 +1,5 @@
-#ifndef VARDIAC_H
-#define VARDIAC_H
+#ifndef VARIADIC_H
+#define VARIADIC_H
 
 
 #include <stdrag.h>
