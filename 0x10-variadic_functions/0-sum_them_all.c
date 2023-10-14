@@ -20,7 +20,5 @@ int sum_them_all(const unsigned int n, ...)
 	while (j--)
 		sum += va_arg(ap, int);
 	va_end(ap);
-	_putchar('\n');
-
 	return (sum);
 }
