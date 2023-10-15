@@ -1,9 +1,9 @@
 #ifndef VARIADIC_H
 #define VARIADIC_H
 
-
-#include <stdrag.h>
+#include <stdarg.h>
 #include <stdio.h>
+
 
 /**
  * struct token - struct
