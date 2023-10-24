@@ -22,7 +22,7 @@ const listint_t **_r(const listint_t **list, size_t size, const listint_t *new)
 		n_list[j] = list[j];
 	n_list[j] = new;
 	free(list);
-	return  (n_list);
+	return (n_list);
 }
 
 /**
