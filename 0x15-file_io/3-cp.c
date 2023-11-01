@@ -14,7 +14,7 @@
  * Return: 1 on success 0 on failure
  */
 
-int main (int ac, char **av)
+int main(int ac, char **av)
 {
 	int from_file = 0, to_file = 0;
 	ssize_t byte;
@@ -25,12 +25,12 @@ int main (int ac, char **av)
 	from_file = open(av[1], O_RDONLY);
 	if (from_file == -1)
 		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
-	to_file = open(av[2], O_WRONLY | O_CREAT | O_TRUNC< PERMISSIONS);
+	to_file = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (to_file == -1)
 		dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
-	
+
 	while ((byte = read(from_file, buf, READ_BUF_SIZE)) > 0)
-		if (write(to_file, buf, b) != b)
+		if (write(to_file, buf, byte) != byte)
 			dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit(99);
 	if (byte == -1)
 		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
