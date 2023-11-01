@@ -16,7 +16,7 @@ int _strlen(char *s)
 	return (j);
 }
 /**
- * create_file - create file
+ * append_text_to_file - create file
  * @text_content: text
  * @filename: file name
  * Return: 1 on success 0 on failure
